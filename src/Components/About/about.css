@@ -1,0 +1,53 @@
+.timeline {
+  min-width: 300px;
+  max-width: 100%;
+  box-shadow: 0px 0px 15px 5px rgb(0 0 0 / 5%);
+  padding: 30px;
+  background: white;
+  border-radius: 2rem;
+}
+
+p {
+  font-size: 1.3rem;
+  line-height: 1.75rem;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #743ad5 0%, #d53a9d 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 40px;
+  counter-increment: section;
+  position: relative;
+  color: black;
+}
+
+p:nth-child(odd) {
+  border-right: 3px solid;
+  padding-left: 0;
+}
+
+p:nth-child(odd):before{
+    left: 100%; 
+    margin-left: -20px;
+}
+
+p:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+}
+
+p:nth-child(even):before {
+    right: 100%; 
+    margin-right: -20px;
+}
+
+p:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+
+p:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}

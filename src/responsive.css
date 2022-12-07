@@ -1,0 +1,100 @@
+@media screen and (max-width:756px){
+   .carousel-caption h1{
+      font-size: 2rem;
+   }
+ 
+   .carousel-caption h3{
+      font-size: 1.5rem;
+   }
+    
+   .carousel{
+      height:350px;
+      overflow: hidden;
+   }
+    
+   .carousel-item-next, 
+   .carousel-item-prev, 
+   .carousel-item.active{
+      height: 350px;
+   }
+ 
+   .d-block{
+      height: 100%;
+   }
+ 
+   .carousel-caption{
+      width: calc(100% - 40px);
+      left: 20px;
+   }
+ 
+   .carousel-control-next,
+   .carousel-control-prev,
+   .carousel-indicators{
+      display: none;
+   }
+ 
+   .row{
+      margin: 0;
+      padding: 0 20px;
+   }
+ 
+   .row .col-md-4,
+   .row .col-md-8,
+   .row .col-md-6{
+      padding: 0;
+   }
+ 
+   .about-team h3{
+      margin-top: 30px;
+   }
+ 
+   .about-expertise ul{
+      padding-left: 0;
+   }
+ 
+   .about-team img{
+      width: 100%;
+   }
+   
+   .contact-container h6 {
+      padding-bottom: 10px;
+      padding-top: 30px;
+   }
+
+   .contact-container .col-md-6.pl-4{
+      padding-left: 0px;
+      padding-top: 30px;
+   }
+
+   .footer address{
+      text-align: center;
+      margin-bottom: 30px;
+   }
+
+   .footer ul{
+      padding: 0;
+      text-align: center;
+      margin-bottom: 0;
+   }
+
+   .about-team{
+      border-bottom: none;
+   }
+
+   .about-container {
+      margin-bottom: -30px;
+   }
+
+   .about-expertise.row{
+      padding: 0;
+   }
+
+   .navbar-brand img{
+      max-width: 100px;
+   }
+
+   .bg-light{
+      min-height: auto;
+      max-height: initial;
+   }
+ }

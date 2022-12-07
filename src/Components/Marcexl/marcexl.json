@@ -1,0 +1,30 @@
+[
+    {
+        "title":{
+            "eng":{
+                "h3":"Hello! ",
+                "span":"My name is"
+            },
+            "arg":{
+                "h3":"¡Hola! ",
+                "span":"Mi nombre es"
+            }
+        },
+        
+        "name":{
+            "eng":"Mr. Marcelo Gallardo",
+            "arg":"Sr. Marcelo Gallardo"
+        },
+    
+        "buttons":{
+            "eng":{
+                "1":"Download CV",
+                "2":"Hire me"
+            },
+            "arg":{
+                "1":"Descargar DV",
+                "2":"Contratame"
+            }
+        }
+    }
+]
