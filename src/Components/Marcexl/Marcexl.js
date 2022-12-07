@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -8,17 +8,17 @@ import Button from 'react-bootstrap/Button';
 import Data from './marcexl.json';
 import './marcexl.css';
 
-function Marcexl(){
-    let len = localStorage.getItem('len') ? localStorage.getItem('len') : "eng";
+function Marcexl(props){
+    const leng = props.title;
     return (    
     <Container id='marcexl' className='full-h'>
         <Row>
             <Col className='salute'>
-                <h3>{Data[0]['title'][len]['h3']} <span>{Data[0]['title'][len]['span']}</span></h3>
+                <h3>{Data[0]['title'][leng]['h3']} <span>{Data[0]['title'][leng]['span']}</span></h3>
                 <h1>
                     <Typewriter
                         options={{
-                            strings: [''+Data[0]['name'][len]+''] ,
+                            strings: [''+Data[0]['name'][leng]+''] ,
                             autoStart: true,
                             loop: true,
                             pauseFor:8000
@@ -39,10 +39,10 @@ function Marcexl(){
                 </h2>
                 <div className='marcexl-buttons'>
                     <Button variant="primary">          
-                        {Data[0]['buttons'][len][1]}
+                        {Data[0]['buttons'][leng][1]}
                     </Button>
                     <Button variant="secondary">          
-                        {Data[0]['buttons'][len][2]}
+                        {Data[0]['buttons'][leng][2]}
                     </Button>
                 </div>
             </Col>

@@ -1,0 +1,16 @@
+[
+    {
+        "1":{
+            "eng":"About me",
+            "arg":"Sobre mí"
+        },
+        "2":{
+            "eng":"Projects",
+            "arg":"Proyectos"
+        },
+        "3":{
+            "eng":"Hire me",
+            "arg":"Contratame"
+        }
+    }
+]
