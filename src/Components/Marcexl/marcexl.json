@@ -18,11 +18,11 @@
     
         "buttons":{
             "eng":{
-                "1":"Download CV",
+                "1":"Download Resume",
                 "2":"Hire me"
             },
             "arg":{
-                "1":"Descargar DV",
+                "1":"Descargar CV",
                 "2":"Contratame"
             }
         }

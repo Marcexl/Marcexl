@@ -1,0 +1,38 @@
+[
+    {
+        "card1":{
+            "eng":{
+                "title":"WEB DEVELOPMENT",
+                "text":"Magento2, WordPress, Woocommerce, landing pages. Bootstrap layout, Jquery or React. Mysql, JSON or Firebase."
+            },
+            "arg":{
+                "title":"DESARROLLO WEB",
+                "text":"Magento2, WordPress, Woocommerce, landing pages. Implementación de Bootstrap, Jquery or React. Mysql, JSON o Firebase."
+            }
+        },
+        "card2":{
+            "eng":{
+                "title":"APPS",
+                "text":"High experience in cordova apps development, now I im working with react and firebase."
+            },
+            "arg":{
+                "title":"APPS",
+                "text":"Años de experiencia en el desarrollo de aplicaciones con cordova, ahora estoy realizando proyectos en react y firebase."
+            }
+        },
+        "card3":{
+            "eng":{
+                "title":"ENJOY",
+                "text":"I strive to provide a high quality product and to achieve 100% satisfaction in the final product."
+            },
+            "arg":{
+                "title":"SATISFACCIÓN",
+                "text":"Me esfuerzo por ofrecer un producto de alta calidad y lograr el 100% de satisfacción en el producto final."
+            }
+        },
+        "buttons":{
+                "eng":"I whant this",
+                "arg":"Quiero"
+        }
+    }
+]

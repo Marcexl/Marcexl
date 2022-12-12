@@ -1,0 +1,57 @@
+#projects{
+    min-height: 100vh;
+    margin-bottom: 60px;
+}
+
+#projects .col{
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#projects .col .project-thumb{
+    max-width: 100%;
+    width: 100%;
+    padding: 5px;
+    transform: scale(1);
+    transition: all .5s;
+}
+
+#projects .col span{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transition: all .5s;
+    letter-spacing: 5px;
+}
+
+#projects .col:hover .project-thumb{
+    filter: brightness(0.15);
+}
+
+#projects .col:hover span{
+    opacity: 1;
+    letter-spacing: normal;
+}
+
+.br1{
+    border-radius: 3rem 0 0 0;
+}
+
+.br2{
+    border-radius: 0 3rem 0 0;
+}
+
+.br3{
+    border-radius: 0 0 0 3rem;
+}
+
+.br4{
+    border-radius: 0 0 3rem 0;
+}

@@ -1,0 +1,36 @@
+[
+    {
+        "title":{
+            "eng":"Please complete the form below",
+            "arg":"Enviame tus datos para contactarte"
+        },
+        "name":{
+            "eng":"Name",
+            "arg":"Nombre"
+        },
+        "fname":{
+            "eng":"Surname",
+            "arg":"Apellido"
+        },
+        "phone":{
+            "eng":"Phone",
+            "arg":"Celular"
+        },
+        "consult":{
+            "eng":"Tell me what you need",
+            "arg":"Contame que necesitas"
+        },
+        "button":{
+            "eng":"Send",
+            "arg":"Enviar"
+        },
+        "title2":{
+            "eng":"CONTACT",
+            "arg":"CONTACTAME"
+        },
+        "wame":{
+            "eng":"Hello%20I%20saw%20your%20site%20its%20great",
+            "arg":"Hola%20me%20contacto%20porque%20vi%20la%20web%20y%20me%20encanto!"
+        }
+    }
+]

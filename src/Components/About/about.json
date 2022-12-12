@@ -1,0 +1,27 @@
+[
+    {
+        "today":{
+            "eng":"I am a frontend developer, I specialize in frontend layout, Work with API services to display de json results. I like being able to meet the proposed goals and objectives. Im opening to hear offers",
+            
+            "arg":"Me especializo en diseño frontend, css flex, sass o less. Me gusta poder cumplir con las metas y objetivos propuestos. Hablo inglés fluido y estoy con ganas de sumarme en algun nuevo proyecto."
+        },
+
+        "2022":{
+            "eng":"I worked for the company 121Ecommerce, there I learned to develop Front using Magento2 with ubuntu. I used the nesting concept with LESS and compiled the styles with Grunt. I also worked with PHTML and XML files. At 121Ecommerce we work with agile methodologies and I had to speak English every day with clients from the United States",
+            "arg":"Trabajé para la empresa 121Ecommerce, alli aprendí a desarrollar FE usando Magento2 con ubuntu. Utilicé el concepto de nesting con LESS y compilé los estilos con Grunt. También trabajé con archivos PHTML y XML. En 121Ecommerce trabajamos con metodologías agiles y tuve que hablar en inglés todos los días con clientes de Estados Unidos"
+        },
+        "2021":{
+            "eng":"I worked at Crowdvac on the Vidgo web application project and the layout for the TV software. The request was that we use HTML5, CSS, using MDBootstrap. Vanilla JS consumption of rest apis and Mosaic Layout pattern.",
+            "arg":"Trabajé en Crowdvac en le proyecto de la aplicacion Vidgo para web y el maquetado para el software de TV. El pedido era que utilicemos HTML5, CSS, usando MDBootstrap. Vanilla JS consumo de api rest y patrón de diseño Mosaico."
+        },
+        "2020":{
+            "eng":"I was able to work for a few months on the Correo Argentino Autosobre project. Maintenance and development of the SIE module, Online using Bootstrap, PHP SOAP, JQUERY and Oracle.",
+            "arg":"Pude trabajar unos meses en el proyecto de Autosobre de Correo Argentino. Mantenimiento y desarollo del modulo SIE,Online usando Bootstrap, SOAP de PHP, JQUERY y Oracle."
+        },
+        "2014":{
+            "eng":"For 8 years I worked in the development and maintenance of internal applications at the Universidad del Salvador. There I applied responsive design to all USAL applications using PHP, HTML, CSS and JQUERY. I participated in several projects where a migration from PEARL to PHP 5 and PHP 7",
+            "arg":"Durante 8 años trabaje en desarrollo y mantenimiento de aplicaciones internas en la Universidad del Salvador. Allí apliqué diseño responsive a todas las aplicaciones de la USAL usando PHP, HTML, CSS y JQUERY. Participé de varios proyectos donde se realizo una migración de PEARL a PHP 5 y PHP 7"
+        }
+        
+    }
+]

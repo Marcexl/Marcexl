@@ -3,6 +3,8 @@ import Header from './Header/Header';
 import Marcexl from './Marcexl/Marcexl';
 import About from './About/About';
 import Services from './Services/Services';
+import Contact from './Contact/Contact';
+import Projects from './Projects/Projects';
 import Squares from './Squares/Squares';
 import Argentina from './argentina.png';
 import Usa from './eeuu.png';
@@ -36,7 +38,9 @@ class App extends Component {
           <Marcexl title="arg"/>
           <About title="arg"/>
           <Services title="arg"/>
-          <div class="squares-container">
+          <Projects title="arg"/>
+          <Contact title="arg"/>
+          <div class="squares-container" id="squarescontainer">
             <Squares id={1}/>
             <Squares id={2}/>
             <Squares id={3}/>
@@ -61,7 +65,9 @@ class App extends Component {
           <Marcexl title="eng"/>
           <About title="eng"/>
           <Services title="eng"/>
-          <div class="squares-container">
+          <Projects title="eng"/>
+          <Contact title="eng"/>
+          <div class="squares-container" id="squarescontainer">
             <Squares id={1}/>
             <Squares id={2}/>
             <Squares id={3}/>

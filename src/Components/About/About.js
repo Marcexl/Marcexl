@@ -2,19 +2,39 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Data from './about.json';
 import './about.css';
 
-function About(){
+function About(props){
+    
+    const leng = props.title;
+
     return (    
-    <Container breakpoint='xxl' className='mt-5 a-i-center' id='about'>
+    <Container breakpoint='xxl' className='mt-5 a-i-center section' id='about'>
         <Row>
             <Col>
                 <div className='timeline'>
-                    <p>I am a frontend developer, I specialize in frontend layout, Work with API services to display de json results. I like being able to meet the proposed goals and objectives.</p>
-                    <p>Shoober shooberino adorable doggo many pats, heckin good boys many pats pupper wrinkler, corgo maximum borkdrive. A frighten puggo wow very biscit.</p>
-                    <p>Big ol h*ck adorable doggo vvv smol borking doggo with a long snoot for pats big ol, he made many woofs doing me a frighten puggo wow very biscit, ruff fat boi ruff long doggo. </p>
-                    <p>Long bois mlem I am bekom fat wrinkler puggo maximum borkdrive big ol pupper I am bekom fat, fluffer vvv adorable doggo lotsa pats snoot. I am bekom fat ur givin me a spook length boy wow very biscit very good spot.</p>
-                    <p>Doggo ipsum long bois lotsa pats blep. What a nice floof ruff super chub very good spot, the neighborhood pupper lotsa pats. Borkdrive shibe shoober what a nice floof, borking doggo.</p>
+                    <div className='timeitem'>
+                        <span className='timeyear right'>Today</span>
+                        <p>{Data[0]['today'][leng]}</p>
+                    </div>
+                    <div className='timeitem'>
+                        <span className='timeyear left'>2022</span>
+                        <p>{Data[0]['2022'][leng]}</p>
+                    </div>
+                    <div className='timeitem'>
+                        <span className='timeyear right'>2021</span>
+                        <p>{Data[0]['2021'][leng]}</p>
+                    </div>
+
+                    <div className='timeitem'>
+                        <span className='timeyear left'>2020</span>
+                        <p>{Data[0]['2020'][leng]}</p>
+                    </div>
+                    <div className='timeitem'>
+                        <span className='timeyear right'>2014</span>
+                        <p>{Data[0]['2014'][leng]}</p>
+                    </div>
                 </div>
             </Col>
         </Row>

@@ -11,7 +11,7 @@ import './marcexl.css';
 function Marcexl(props){
     const leng = props.title;
     return (    
-    <Container id='marcexl' className='full-h'>
+    <Container id='marcexl' className='full-h section'>
         <Row>
             <Col className='salute'>
                 <h3>{Data[0]['title'][leng]['h3']} <span>{Data[0]['title'][leng]['span']}</span></h3>
@@ -41,9 +41,11 @@ function Marcexl(props){
                     <Button variant="primary">          
                         {Data[0]['buttons'][leng][1]}
                     </Button>
-                    <Button variant="secondary">          
-                        {Data[0]['buttons'][leng][2]}
-                    </Button>
+                    <a href="tel:+5491123922906">
+                        <Button variant="secondary">          
+                            {Data[0]['buttons'][leng][2]}
+                        </Button>
+                    </a>
                 </div>
             </Col>
         </Row>

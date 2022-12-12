@@ -7,45 +7,48 @@ import Button from 'react-bootstrap/Button';
 import LanguageIcon from '@mui/icons-material/Language';
 import AndroidIcon from '@mui/icons-material/Android';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+import Data from './services.json';
 import './services.css';
 
 class Services extends React.Component {
+    
     render() {
-      return (    
-        <Container breakpoint='xxl' className='mt-5 a-i-center' id='services'>
+      return (      
+        <Container breakpoint='xxl' className='mt-5 a-i-center section' id='services'>
             <Row>
                 <Col>
                     <Card>
                         <LanguageIcon fontSize='large' />
-                        <h2>WEB DEVELOPMENT</h2>
+                        <h2>{Data[0]['card1'][this.props.title]['title']}</h2>
                         <div className='card-text'>
-                            Magento, WordPress, Woocommerce, landing pages. Bootstrap layout, Jquery or React. Mysql, JSON or Firebase.
+                            {Data[0]['card1'][this.props.title]['text']}
                         </div>
                         <Button variant="primary services-but">          
-                            I whant this
+                            {Data[0]['buttons'][this.props.title]}
                         </Button>
                     </Card>
                 </Col>
                 <Col>
                     <Card>
                         <AndroidIcon fontSize='large' />
-                        <h2>APPS</h2>
+                        <h2>{Data[0]['card2'][this.props.title]['title']}</h2>
                         <div className='card-text'>
-                        High experience in cordova apps development cordova, now we are working on react and firebase.
+                            {Data[0]['card2'][this.props.title]['text']}                        
                         </div>
                          <Button variant="primary services-but">          
-                            I whant this
+                            {Data[0]['buttons'][this.props.title]}
                         </Button>
                     </Card>
                 </Col>
                 <Col>
                     <Card>
                         <ThumbUpIcon fontSize='large' />
-                        <h2>ENJOY</h2>
+                        <h2>{Data[0]['card3'][this.props.title]['title']}</h2>
                         <div className='card-text'>
-                        I strive to provide a high quality product and to achieve 100% satisfaction in the final product.</div>
-                         <Button variant="primary services-but">          
-                            I whant this
+                            {Data[0]['card3'][this.props.title]['text']}
+                        </div>
+                        <Button variant="primary services-but">          
+                            {Data[0]['buttons'][this.props.title]}
                         </Button>
                     </Card>
                 </Col>

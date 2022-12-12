@@ -52,6 +52,11 @@
     padding: 45px 0;
 }
 
+.marcexl-buttons a{
+    text-decoration: none;
+    color: var(--bs-white);
+}
+
 .marcexl-buttons button:first-child{
     margin-right: 20px;
 }
