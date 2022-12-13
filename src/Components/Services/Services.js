@@ -23,11 +23,7 @@ class Services extends React.Component {
                         <div className='card-text'>
                             {Data[0]['card1'][this.props.title]['text']}
                         </div>
-                        <a href='#contact'>
-                            <Button variant="primary services-but">          
-                                {Data[0]['buttons'][this.props.title]}
-                            </Button>
-                        </a>
+                        
                     </Card>
                 </Col>
                 <Col>
@@ -37,7 +33,7 @@ class Services extends React.Component {
                         <div className='card-text'>
                             {Data[0]['card2'][this.props.title]['text']}                        
                         </div>
-                        <a href='#contact'>
+                        <a href='https://play.google.com/store/apps/details?id=ar.org.sgiar.app&hl=en&gl=US&pli=1'>
                             <Button variant="primary services-but">          
                                 {Data[0]['buttons'][this.props.title]}
                             </Button>
@@ -51,11 +47,7 @@ class Services extends React.Component {
                         <div className='card-text'>
                             {Data[0]['card3'][this.props.title]['text']}
                         </div>
-                        <a href='#contact'>
-                            <Button variant="primary services-but">          
-                                {Data[0]['buttons'][this.props.title]}
-                            </Button>
-                        </a>
+                    
                     </Card>
                 </Col>
             </Row>

@@ -17,12 +17,12 @@ function Contact(props) {
 
     const handleSubmit = (event) => {
       const form = event.currentTarget;
-      if (form.checkValidity() === false) {
+      if (form.checkValidity() === false) 
+      {
         event.preventDefault();
         event.stopPropagation();
       }
-      else
-      {
+        event.preventDefault();
         setValidated(true);
 
         let name  = document.getElementById('name').value;
@@ -30,19 +30,20 @@ function Contact(props) {
         let phone = document.getElementById('phone').value;
         let email = document.getElementById('email').value;
         let consulting = document.getElementById('consulting').value;
-       
+        
         const data = JSON.stringify({ name: name, fname: fname, phone: phone, email: email, consulting: consulting });
-        fetch('/Mail/mail.php', {
+        fetch('./Mail/mail.php', {
             method: 'POST',
             body: data
-          }).then((response) => {
+            }).then((response) => {
             if (response.ok) 
             {
-              this.setState({ success: true })
+                this.setState({ success: true })
+            }else
+            {
+                console.log(response);
             }
-          })  
-      }
-
+        })  
     };
 
     return (
@@ -89,7 +90,7 @@ function Contact(props) {
                         />
                     </Form.Group>
 
-                    <Form.Group as={Col} md="12" controlId="consult">
+                    <Form.Group as={Col} md="12" controlId="consulting">
                         <Form.Control 
                             as="textarea" 
                             aria-label="With textarea" 
