@@ -49,6 +49,7 @@ class App extends Component {
             <Squares id={6}/>
             <Squares id={7}/>
             <Squares id={8}/>
+            <div id="follower"></div>
           </div>
           </>
       );
@@ -76,6 +77,7 @@ class App extends Component {
             <Squares id={6}/>
             <Squares id={7}/>
             <Squares id={8}/>
+            <div id="follower"></div>
           </div>
           </>
       );

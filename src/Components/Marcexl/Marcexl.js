@@ -38,9 +38,11 @@ function Marcexl(props){
                     </MovingText>
                 </h2>
                 <div className='marcexl-buttons'>
-                    <Button variant="primary">          
-                        {Data[0]['buttons'][leng][1]}
-                    </Button>
+                    <a href={'./Download/'+Data[0]['link'][leng]} target="_blank" rel="noreferrer" >
+                        <Button variant="primary">          
+                            {Data[0]['buttons'][leng][1]}
+                        </Button>
+                    </a>
                     <a href="tel:+5491123922906">
                         <Button variant="secondary">          
                             {Data[0]['buttons'][leng][2]}

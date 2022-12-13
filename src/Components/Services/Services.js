@@ -11,7 +11,7 @@ import Data from './services.json';
 import './services.css';
 
 class Services extends React.Component {
-    
+
     render() {
       return (      
         <Container breakpoint='xxl' className='mt-5 a-i-center section' id='services'>
@@ -23,9 +23,11 @@ class Services extends React.Component {
                         <div className='card-text'>
                             {Data[0]['card1'][this.props.title]['text']}
                         </div>
-                        <Button variant="primary services-but">          
-                            {Data[0]['buttons'][this.props.title]}
-                        </Button>
+                        <a href='#contact'>
+                            <Button variant="primary services-but">          
+                                {Data[0]['buttons'][this.props.title]}
+                            </Button>
+                        </a>
                     </Card>
                 </Col>
                 <Col>
@@ -35,9 +37,11 @@ class Services extends React.Component {
                         <div className='card-text'>
                             {Data[0]['card2'][this.props.title]['text']}                        
                         </div>
-                         <Button variant="primary services-but">          
-                            {Data[0]['buttons'][this.props.title]}
-                        </Button>
+                        <a href='#contact'>
+                            <Button variant="primary services-but">          
+                                {Data[0]['buttons'][this.props.title]}
+                            </Button>
+                        </a>
                     </Card>
                 </Col>
                 <Col>
@@ -47,9 +51,11 @@ class Services extends React.Component {
                         <div className='card-text'>
                             {Data[0]['card3'][this.props.title]['text']}
                         </div>
-                        <Button variant="primary services-but">          
-                            {Data[0]['buttons'][this.props.title]}
-                        </Button>
+                        <a href='#contact'>
+                            <Button variant="primary services-but">          
+                                {Data[0]['buttons'][this.props.title]}
+                            </Button>
+                        </a>
                     </Card>
                 </Col>
             </Row>

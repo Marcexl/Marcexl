@@ -54,7 +54,7 @@ body {
   transform: scale(0.9);
 }
 
-.filter{
+.section.filter{
   filter: blur(7px);
   -webkit-filter: blur(7px);
 }

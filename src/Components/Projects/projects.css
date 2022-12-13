@@ -1,10 +1,11 @@
 #projects{
     min-height: 100vh;
-    margin-bottom: 60px;
+    margin-bottom: 120px;
 }
-
 #projects .col{
     padding: 0;
+}
+#projects .col a{
     position: relative;
     overflow: hidden;
     display: flex;
@@ -21,7 +22,7 @@
     transition: all .5s;
 }
 
-#projects .col span{
+#projects .col a span{
     position: absolute;
     width: 100%;
     text-align: center;
@@ -35,7 +36,7 @@
     filter: brightness(0.15);
 }
 
-#projects .col:hover span{
+#projects .col:hover a span{
     opacity: 1;
     letter-spacing: normal;
 }

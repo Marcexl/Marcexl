@@ -25,6 +25,11 @@
                 "1":"Descargar CV",
                 "2":"Contratame"
             }
+        },
+        
+        "link":{
+            "eng":"MarceloGallardoResume.pdf",
+            "arg":"MarceloGallardoCV.pdf"
         }
     }
 ]

@@ -18,16 +18,24 @@ function Header(props) {
   let flag = 0;
   
   function ExplodeBoxes(){
+
+    /* init cursor animate */
+    cursor();
+
     /* get elem for work */
     const elem = document.getElementById("squarescontainer");
-    const elem2 = document.querySelector(".section");
+    const elem2 = document.querySelectorAll(".section");
+    const follow = document.getElementById("follower");
 
     if(flag === 0){
       /* add clases */
       elem.classList.add('front');
-      elem2.classList.add('filter');
+      for (const div of elem2) {
+        div.classList.add('filter');
+      }
       document.getElementById('closebox').style.display = 'block';
       document.getElementById('playbox').style.display = 'none';
+      follow.style.display = 'block';
       flag++;
     }
     else
@@ -35,12 +43,53 @@ function Header(props) {
       /* remove classes */ 
       flag--;
       elem.classList.remove('front');
-      elem2.classList.remove('filter');
+      for (const div of elem2) {
+        div.classList.remove('filter');
+      }
       document.getElementById('closebox').style.display = 'none';
       document.getElementById('playbox').style.display = 'block';
+      follow.style.display = 'none';
     }
 
   }
+
+    /* cursor */ 
+    function cursor(){
+      var follower, init, mouseX, mouseY, positionElement, printout, timer;
+
+      follower = document.getElementById('follower');
+
+      printout = document.getElementById('printout');
+
+      mouseX = (event) => {
+        return event.clientX;
+      };
+
+      mouseY = (event) => {
+        return event.clientY;
+      };
+
+      positionElement = (event) => {
+        var mouse;
+        mouse = {
+          x: mouseX(event),
+          y: mouseY(event)
+        };
+        follower.style.top = mouse.y + 'px';
+        return follower.style.left = mouse.x + 'px';
+      };
+
+      timer = false;
+
+      window.onmousemove = init = (event) => {
+        var _event;
+        _event = event;
+        return timer = setTimeout(() => {
+          return positionElement(_event);
+        }, 1);
+      };
+
+    }
 
   return (
     <Navbar bg="light" className="vertical-nav">

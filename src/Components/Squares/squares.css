@@ -11,6 +11,7 @@
 .squares-container.front{
     z-index: 1;
     background: rgb(255,255,255,0.5);
+    cursor: none;
 }
 
 .squares-container ul{
@@ -20,7 +21,7 @@
     height: 80px;
     display: flex;
     flex-wrap: wrap;
-    cursor: pointer;
+    cursor: none;
     position: absolute;
     animation: animate 25s linear infinite;
     bottom: -150px;
@@ -183,6 +184,17 @@
     animation-delay: 12s;
 }
 
+#follower{
+    width: 25px;
+    height: 25px;
+    display: none;
+    background: url(./telescopic.png);
+    background-size: 100% 100%;
+    transform: scale(1);
+    animation: follow 2s ease-in-out 0s infinite;
+    position: absolute;
+}
+
 @keyframes animate {
     0%{
         transform: translateY(0) rotate(0deg);
@@ -198,4 +210,18 @@
         opacity: 0;
         border-radius: 50%;
     }
+}
+
+@keyframes follow {
+    0%{
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+    
 }

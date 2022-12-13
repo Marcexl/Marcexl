@@ -21,19 +21,39 @@ function Contact(props) {
         event.preventDefault();
         event.stopPropagation();
       }
-  
-      setValidated(true);
+      else
+      {
+        setValidated(true);
+
+        let name  = document.getElementById('name').value;
+        let fname = document.getElementById('fname').value;
+        let phone = document.getElementById('phone').value;
+        let email = document.getElementById('email').value;
+        let consulting = document.getElementById('consulting').value;
+       
+        const data = JSON.stringify({ name: name, fname: fname, phone: phone, email: email, consulting: consulting });
+        fetch('/Mail/mail.php', {
+            method: 'POST',
+            body: data
+          }).then((response) => {
+            if (response.ok) 
+            {
+              this.setState({ success: true })
+            }
+          })  
+      }
+
     };
 
     return (
-        <Container className='contact-container' id="contact"> 
+        <Container className='contact-container section' id="contact"> 
             <Row>
                 <Col className='contact-container-form'>
                     <Form noValidate validated={validated} onSubmit={handleSubmit}>
                     
                     <h5 className='mb-5'>{Data[0]['title'][leng]}</h5>
                     
-                    <Form.Group as={Col} md="6" controlId="validationCustom01" className='pr-2'>
+                    <Form.Group as={Col} md="6" controlId="name" className='pr-2'>
                         <Form.Control
                             required
                             type="text"
@@ -42,7 +62,7 @@ function Contact(props) {
                         />
                     </Form.Group>
                     
-                    <Form.Group as={Col} md="6" controlId="validationCustom02">
+                    <Form.Group as={Col} md="6" controlId="fname">
                         <Form.Control
                             required
                             type="text"
@@ -51,7 +71,7 @@ function Contact(props) {
                         />
                     </Form.Group>
 
-                    <Form.Group as={Col} md="6" controlId="validationCustom03" className='pr-2'>
+                    <Form.Group as={Col} md="6" controlId="email" className='pr-2'>
                         <Form.Control
                             required
                             type="email"
@@ -60,7 +80,7 @@ function Contact(props) {
                         />
                     </Form.Group>
 
-                    <Form.Group as={Col} md="6" controlId="validationCustom04">
+                    <Form.Group as={Col} md="6" controlId="phone">
                         <Form.Control
                             required
                             type="number"
@@ -69,7 +89,7 @@ function Contact(props) {
                         />
                     </Form.Group>
 
-                    <Form.Group as={Col} md="12" controlId="validationCustom05">
+                    <Form.Group as={Col} md="12" controlId="consult">
                         <Form.Control 
                             as="textarea" 
                             aria-label="With textarea" 
