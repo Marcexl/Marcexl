@@ -39,23 +39,22 @@ function Contact(props) {
             }).then((response) => {
             if (response.ok) 
             {
+                let msj = document.getElementById("success");
+                msj.style.display = 'block';
+                msj.innerHTML = Data[0]['msj'][leng];
+
                 setTimeout(function(){
                     document.getElementById("contactform").reset();
-                },200);
+                    msj.style.display = 'none';
+                    msj.innerHTML = '';
+                },500);
 
-                return (
-                    <>
-                    <Alert variant="success">
-                        {Data[0]['msj'][leng]}
-                    </Alert>
-                    </>
-                  );
             }
             else
             {
-                <Alert variant="success">
-                    {Data[0]['msj'][leng]}
-                </Alert>
+                let msj = document.getElementById("danger");
+                msj.style.display = 'block';
+                msj.innerHTML = Data[0]['error'][leng];
                 console.log(response);
             }
         })  
@@ -113,7 +112,7 @@ function Contact(props) {
                         />
                     </Form.Group>
                     
-                    <Button type="submit">{Data[0]['button'][leng]}</Button>
+                        <Button type="submit">{Data[0]['button'][leng]}</Button>
                     </Form>
                 </Col>
             </Row>
@@ -138,6 +137,8 @@ function Contact(props) {
                     </address>
                 </Col>
             </Row>
+            <Alert variant="success" id="success"></Alert>
+            <Alert variant="danger" id="danger"></Alert>
         </Container>
     );
   }

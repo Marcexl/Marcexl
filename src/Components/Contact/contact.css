@@ -99,3 +99,7 @@ address a span{
     position: relative;
     top: 3px;
 }
+
+.alert{
+    display: none;
+}
