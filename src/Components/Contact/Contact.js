@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 import HomeIcon from '@mui/icons-material/Home';
 import EmailIcon from '@mui/icons-material/Email';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import Alert from 'react-bootstrap/Alert';
 import Data from './contact.json';
 import './contact.css';
 
@@ -38,9 +39,23 @@ function Contact(props) {
             }).then((response) => {
             if (response.ok) 
             {
-                this.setState({ success: true })
-            }else
+                setTimeout(function(){
+                    document.getElementById("contactform").reset();
+                },200);
+
+                return (
+                    <>
+                    <Alert variant="success">
+                        {Data[0]['msj'][leng]}
+                    </Alert>
+                    </>
+                  );
+            }
+            else
             {
+                <Alert variant="success">
+                    {Data[0]['msj'][leng]}
+                </Alert>
                 console.log(response);
             }
         })  
@@ -50,7 +65,7 @@ function Contact(props) {
         <Container className='contact-container section' id="contact"> 
             <Row>
                 <Col className='contact-container-form'>
-                    <Form noValidate validated={validated} onSubmit={handleSubmit}>
+                    <Form noValidate validated={validated} onSubmit={handleSubmit} id="contactform">
                     
                     <h5 className='mb-5'>{Data[0]['title'][leng]}</h5>
                     
