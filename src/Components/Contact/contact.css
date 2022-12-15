@@ -103,3 +103,7 @@ address a span{
 .alert{
     display: none;
 }
+
+.g-recaptcha{
+    margin-top: 30px;
+}

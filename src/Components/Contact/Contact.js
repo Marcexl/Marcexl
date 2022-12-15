@@ -23,6 +23,8 @@ function Contact(props) {
         event.preventDefault();
         event.stopPropagation();
       }
+      else
+      {
         event.preventDefault();
         setValidated(true);
 
@@ -57,7 +59,8 @@ function Contact(props) {
                 msj.innerHTML = Data[0]['error'][leng];
                 console.log(response);
             }
-        })  
+        })
+        }  
     };
 
     return (
@@ -113,6 +116,8 @@ function Contact(props) {
                     </Form.Group>
                     
                         <Button type="submit">{Data[0]['button'][leng]}</Button>
+                        <div className="g-recaptcha" data-sitekey="6LfqrD0gAAAAAC5oZFP5hIJEPL4i1KTUZ9fWlV4l"></div>
+                    
                     </Form>
                 </Col>
             </Row>
