@@ -54,7 +54,7 @@ class Projects extends React.Component {
             <Row>
                 <Col>
                     <a href='http://nlpg.com/'>
-                        <img src={require('./007.jpg')} alt='' class="project-thumb br3"/>
+                        <img src={require('./007.jpg')} alt='' class="project-thumb"/>
                         <span>
                             {text[this.props.title]}<br/>
                             Magento2
@@ -74,7 +74,7 @@ class Projects extends React.Component {
             <Row>
                 <Col>
                     <a href='https://ecoproteccion.com.ar/'>
-                        <img src={require('./004.jpg')} alt='' class="project-thumb"/>
+                        <img src={require('./004.jpg')} alt='' class="project-thumb br3"/>
                         <span>
                             {text[this.props.title]}<br/>
                             Wordpress
