@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Frontend, web developer, responsive design, bootstrap, wordpress, react, woocommerce, magento2. All you need for your site."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -53,6 +53,20 @@
     <script
       src="https://cdn.jsdelivr.net/npm/react-bootstrap@next/dist/react-bootstrap.min.js"
       crossorigin></script>
-    <script>var Alert = ReactBootstrap.Alert;</script>
+    <script>
+      var nums = [33,78,96,1,20,22,-155,-35,2,45];
+      function find_max(nums){
+          let max_num = Number.NEGATIVE_INFINITY;
+          for (let num of nums){
+              if(num > max_num){
+                  max_num = num;
+              }
+          }
+
+          return max_num;
+      }
+
+      console.log(find_max(nums));
+    </script>
   </body>
 </html>
