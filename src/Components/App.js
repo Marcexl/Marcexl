@@ -40,7 +40,7 @@ class App extends Component {
           <Services title="arg"/>
           <Projects title="arg"/>
           <Contact title="arg"/>
-          <div class="squares-container" id="squarescontainer">
+          <div className="squares-container" id="squarescontainer">
             <Squares id={1}/>
             <Squares id={2}/>
             <Squares id={3}/>
@@ -68,7 +68,7 @@ class App extends Component {
           <Services title="eng"/>
           <Projects title="eng"/>
           <Contact title="eng"/>
-          <div class="squares-container" id="squarescontainer">
+          <div className="squares-container" id="squarescontainer">
             <Squares id={1}/>
             <Squares id={2}/>
             <Squares id={3}/>
